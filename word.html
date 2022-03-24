@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+<head>
+    <title>ONLYOFFICE Api Documentation</title>
+</head>
+<body style="height: 100%; margin: 0;">
+    <div id="placeholder" style="height: 100%"></div>
+    <script type="text/javascript" src="http://192.168.59.33:9022/web-apps/apps/api/documents/api.js"></script>
+
+    <script type="text/javascript">
+        const config = {
+            "document": {
+                "fileType": "docx",
+                "key": "Khirz6zTPdfd7",
+                "title": "test.docx",
+                "url": "http://192.168.205.196:7000/test.docx"
+            },
+            "documentType": "word",
+            "editorConfig": {
+                "callbackUrl": "http://192.168.205.196:9000/track",
+                "lang": "zh", // 语言
+                "customization": {
+                    "customer": {
+                        "address": "My City, 123a-45",
+                        "info": "Some additional information",
+                        "logo": "https://example.com/logo-big.png",
+                        "logoDark": "https://example.com/dark-logo-big.png",
+                        "mail": "john@example.com",
+                        "name": "John Smith and Co.",
+                        "www": "111111111111"
+                    },
+                    "plugins": false, // 工具栏插件面板展示
+                    "anonymous": {
+                        "request": false,
+                        "label": "xx"
+                    },
+                    "logo": {
+                        "image": "http://192.168.205.196:7000/logo.png",
+                        "imageDark": "http://192.168.205.196:7000/logo_dark.png",
+                        "url": "https://www.baidu.com",
+                    },
+                    "autosave": false,
+                    "chat": false,
+                    "comments": true,
+                    "compactHeader": false,
+                    "compactToolbar": false,
+                    "compatibleFeatures": false,
+                    "feedback": {
+                        "visible": false
+                    },
+                    "help": false,
+                    "forcesave": true,
+                },
+            },
+            "height": "100%",
+            "width": "100%"
+        }
+        window.docEditor = new DocsAPI.DocEditor("placeholder", config);
+
+    </script>
+</body>
+</html>
