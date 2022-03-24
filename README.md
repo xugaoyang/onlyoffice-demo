@@ -31,7 +31,7 @@ http://192.168.59.33:9022
 #### 静态服务启动
 1. 安装node
 
-2. 安装 anywhere【静态服务】| 也可使用live-serve
+2. 安装 anywhere【静态服务】| 也可使用live-server
 ```
 npm install anywhere -g
 ```
