@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html style="height: 100%;">
+
 <head>
     <title>ONLYOFFICE Api Documentation</title>
 </head>
+
 <body style="height: 100%; margin: 0;">
     <div id="placeholder" style="height: 100%"></div>
     <script type="text/javascript" src="http://192.168.59.33:9022/web-apps/apps/api/documents/api.js"></script>
@@ -12,24 +14,14 @@
             "document": {
                 "fileType": "xlsx",
                 "key": "53500B46FCA9",
-                "title": "excel测试.xlsx",
-                "url": "https://example.com/url-to-example-spreadsheet.xlsx"
+                "title": "mult_sheet.xlsx",
+                "url": "http://192.168.205.196:7000/docs/mult_sheet.xlsx"
             },
             "documentType": "cell",
             "editorConfig": {
                 "lang": "zh",
-                "callbackUrl": "https://example.com/url-to-callback.ashx",
+                "callbackUrl": "http://192.168.205.196:9000/track",
                 "customization": {
-                    "anonymous": {
-                        "request": true,
-                        "label": "Guest"
-                    },
-                    "autosave": true,
-                    "chat": true,
-                    "comments": true,
-                    "compactHeader": false,
-                    "compactToolbar": false,
-                    "compatibleFeatures": false,
                     "customer": {
                         "address": "My City, 123a-45",
                         "info": "Some additional information",
@@ -37,52 +29,37 @@
                         "logoDark": "https://example.com/dark-logo-big.png",
                         "mail": "john@example.com",
                         "name": "John Smith and Co.",
-                        "www": "example.com"
+                        "www": "111111111111"
                     },
-                    "feedback": {
-                        "url": "https://example.com",
-                        "visible": true
+                    "plugins": false, // 工具栏插件面板展示
+                    "anonymous": {
+                        "request": false,
+                        "label": "xx"
                     },
-                    "forcesave": false,
-                    "goback": {
-                        "blank": true,
-                        "requestClose": false,
-                        "text": "Open file location",
-                        "url": "https://example.com"
-                    },
-                    "help": true,
-                    "hideNotes": false,
-                    "hideRightMenu": false,
-                    "hideRulers": false,
                     "logo": {
-                        "image": "https://example.com/logo.png",
-                        "imageDark": "https://example.com/dark-logo.png",
-                        "url": "https://example.com"
+                        "image": "http://192.168.205.196:7000/logo.png",
+                        "imageDark": "http://192.168.205.196:7000/logo_dark.png",
+                        "url": "https://www.baidu.com",
                     },
-                    "macros": true,
-                    "macrosMode": "warn",
-                    "mentionShare": true,
-                    "plugins": true,
-                    "review": {
-                        "hideReviewDisplay": false,
-                        "showReviewChanges": false,
-                        "reviewDisplay": "original",
-                        "trackChanges": true,
-                        "hoverMode": false
+                    "autosave": false,
+                    "chat": false,
+                    "comments": true,
+                    "compactHeader": false,
+                    "compactToolbar": false,
+                    "compatibleFeatures": false,
+                    "feedback": {
+                        "visible": false
                     },
-                    "spellcheck": true,
-                    "toolbarHideFileName": false,
-                    "toolbarNoTabs": false,
-                    "uiTheme": "theme-dark",
-                    "unit": "cm",
-                    "zoom": 100
+                    "help": false,
+                    "forcesave": true,
                 },
             },
             "height": "100%",
             "width": "100%"
         }
-        window.docEditor = new DocsAPI.DocEditor("placeholder", config);
+        window.docEditor = new DocsAPI.DocEditor("placeholder", config)
 
     </script>
 </body>
+
 </html>

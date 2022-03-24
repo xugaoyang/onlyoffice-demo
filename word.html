@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html style="height: 100%;">
+
 <head>
     <title>ONLYOFFICE Api Documentation</title>
 </head>
+
 <body style="height: 100%; margin: 0;">
     <div id="placeholder" style="height: 100%"></div>
     <script type="text/javascript" src="http://192.168.59.33:9022/web-apps/apps/api/documents/api.js"></script>
 
     <script type="text/javascript">
+        const CALLBACK_API = 'http://192.168.205.196:9000/track'
+        const DOC_URL = 'http://192.168.205.196:7000/docs/test.docx'
         const config = {
             "document": {
                 "fileType": "docx",
                 "key": "Khirz6zTPdfd7",
                 "title": "test.docx",
-                "url": "http://192.168.205.196:7000/test.docx"
+                "url": DOC_URL
             },
             "documentType": "word",
             "editorConfig": {
-                "callbackUrl": "http://192.168.205.196:9000/track",
+                "callbackUrl": CALLBACK_API,
                 "lang": "zh", // 语言
                 "customization": {
                     "customer": {
@@ -55,8 +59,9 @@
             "height": "100%",
             "width": "100%"
         }
-        window.docEditor = new DocsAPI.DocEditor("placeholder", config);
+        window.docEditor = new DocsAPI.DocEditor("placeholder", config)
 
     </script>
 </body>
+
 </html>

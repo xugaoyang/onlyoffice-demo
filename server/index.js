@@ -40,6 +40,7 @@ app.post('/track', function (req, res) {
 
   if (req.body.hasOwnProperty('status')) {
     console.log('111', res, req.body)
+    // updateFile(res, req.body, __dirname+'\saveDocs')
     updateFile(res, req.body, path.join(__dirname, 'saveDocs'))
   } else {
     console.log('222', req, res)
