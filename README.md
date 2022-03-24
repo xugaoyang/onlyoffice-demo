@@ -1,7 +1,7 @@
 ## onlyoffice
 
 ### 项目目录
-
+```
 ├─docs -------------------------- 文件目录
 └─server
   └─index.js -------------------- node回调服务接口 
@@ -9,7 +9,7 @@
 ├─word.html --------------------- word在线编辑器
 ├─onlyoffice_flow.drawio
 └─README.md
-
+```
 ### 启动
 
 #### document server 安装部署，需要在onlyoffice官网获取社区版然后进行部署，本仓库不做此说明
@@ -63,7 +63,7 @@ anywhere 7000
 
 #### API
 
-1. callbackUrl
+##### callbackUrl
 
   **document server** 会在用户编辑文档期间多次回调接口，会将用户当前编辑状态返回值回调接口。
 
