@@ -10,17 +10,19 @@
     <script type="text/javascript" src="http://192.168.59.33:9022/web-apps/apps/api/documents/api.js"></script>
 
     <script type="text/javascript">
+        const CALLBACK_API = 'http://192.168.205.196:9000/track'
+        const DOC_URL = 'http://192.168.205.196:7000/docs/mult_sheet.xlsx'
         const config = {
             "document": {
                 "fileType": "xlsx",
                 "key": "53500B46FCA9",
                 "title": "mult_sheet.xlsx",
-                "url": "http://192.168.205.196:7000/docs/mult_sheet.xlsx"
+                "url": DOC_URL
             },
             "documentType": "cell",
             "editorConfig": {
                 "lang": "zh",
-                "callbackUrl": "http://192.168.205.196:9000/track",
+                "callbackUrl": CALLBACK_API,
                 "customization": {
                     "customer": {
                         "address": "My City, 123a-45",
