@@ -3,8 +3,8 @@
 ### 项目目录
 ```
 ├─docs -------------------------- 文件目录
-└─server
-  └─index.js -------------------- node回调服务接口 
+├─server
+│  └─index.js ------------------- node回调服务接口 
 ├─excel.html -------------------- excel在线编辑器
 ├─word.html --------------------- word在线编辑器
 ├─onlyoffice_flow.drawio
