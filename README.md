@@ -31,7 +31,7 @@ http://192.168.59.33:9022
 #### 静态服务启动
 1. 安装node
 
-2. 安装 anywhere【静态服务】
+2. 安装 anywhere【静态服务】| 也可使用live-serve
 ```
 npm install anywhere -g
 ```
@@ -61,9 +61,9 @@ anywhere 7000
 
 ### 使用
 
-#### API
+#### API说明
 
-##### callbackUrl
+##### 1. callbackUrl
 
   **document server** 会在用户编辑文档期间多次回调接口，会将用户当前编辑状态返回值回调接口。
 
